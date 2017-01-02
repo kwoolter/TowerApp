@@ -18,5 +18,4 @@ The towerrpg module contains all of the files for the game:-
 - towerrpg\KWGameClasses.py - high score table code
 - towerrpg\eztext.py - text input function for pygame
 - towerrpg\resources\ - folder contains all of the graphics files (.png)
-##Screenshots
 
