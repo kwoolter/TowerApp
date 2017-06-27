@@ -8,7 +8,7 @@ The Tower by :monkey: kwoolter :copyright: 2016
 ## Getting Started
 - Install the requirements
 - Associate python 3.2 with the project
-- Use run.py to start the application
+- Use `run.py` to start the application
 - Tower.hst contains the high score table
 
 ## The Story
@@ -45,9 +45,9 @@ Watch out for your health level!  Game over if it gets to 0.
 
 ## Structure
 The towerrpg module contains all of the files for the game:-
-- towerrpg\game.py - main game engine (model) - Player, Floor, TowerRPG, FloorBuilder
-- towerrpg\graphics.py - classes to display the game (view) - FloorView, ScoreView
-- towerrpg\main.py - the main pygame loop (controller)
-- towerrpg\KWGameClasses.py - high score table code
-- towerrpg\eztext.py - text input function for pygame.  Used to enter player's name
-- towerrpg\resources\ - folder contains all of the graphics files (.png)
+- `towerrpg\game.py` - main game engine (model) - Player, Floor, TowerRPG, FloorBuilder
+- `towerrpg\graphics.py` - classes to display the game (view) - FloorView, ScoreView
+- `towerrpg\main.py` - the main pygame loop (controller)
+- `towerrpg\KWGameClasses.py` - high score table code
+- `towerrpg\eztext.py` - text input function for pygame.  Used to enter player's name
+- `towerrpg\resources\` - folder contains all of the graphics files (.png)
