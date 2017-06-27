@@ -22,18 +22,18 @@ Watch out for your health level!  Game over if it gets to 0.
 <table>
 <tr>
 <td>
-<img height=300 width=300 src="https://github.com/kwoolter/Tower2/blob/master/game_template/screenshots/title.PNG" alt="title">
+<img height=300 width=300 src="https://github.com/kwoolter/TowerApp/blob/master/towerrpg/screenshots/Tower0.PNG" alt="title">
 </td>
 <td>
-<img height=300 width=300 src="https://github.com/kwoolter/Tower2/blob/master/game_template/screenshots/game1.PNG" alt="game1">
+<img height=300 width=300 src="https://github.com/kwoolter/TowerApp/blob/master/towerrpg/screenshots/Tower1.PNG" alt="game1">
 </td>
 </tr>
 <tr>
 <td>
-<img height=300 width=200 src="https://github.com/kwoolter/Tower2/blob/master/game_template/screenshots/game2.PNG" alt="game2">
+<img height=300 width=300 src="https://github.com/kwoolter/TowerApp/blob/master/towerrpg/screenshots/Tower2.PNG" alt="game2">
 </td>
 <td>
-<img height=300 width=200 src="https://github.com/kwoolter/Tower2/blob/master/game_template/screenshots/game3.PNG" alt="game3">
+<img height=300 width=200 src="https://github.com/kwoolter/TowerApp/blob/master/towerrpg/screenshots/Tower3.PNG" alt="game3">
 </td>
 </tr>
 </table>
