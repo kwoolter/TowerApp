@@ -569,7 +569,6 @@ class TowerRPG:
         self.effects = {}
 
 
-        self.current_floor_level = 7
         self.current_floor_level = TowerRPG.CHAOS + 6
         self.current_floor_level = TowerRPG.STARTING_LEVEL
 

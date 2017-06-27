@@ -1,11 +1,13 @@
 __author__ = 'user'
 
 import logging
-import time
-import pygame
 import os.path
+import time
+
+import pygame
 
 from towerrpg import game
+
 
 class Colours:
     # set up the colours
@@ -36,7 +38,7 @@ class TileFileNames:
         game.Floor.BRAZIER: "brazier.png",
         game.Floor.BRAZIER_LIT: "brazier_lit.png",
         game.Floor.CAVE_WALL: "cave_wall.png",
-        game.Floor.CHAOS_PORTAL : "chaos_portal.png",
+        game.Floor.CHAOS_PORTAL: "chaos_portal.png",
         game.Floor.CHEQUER: "cheque2.png",
         game.Floor.CHICKEN: "chicken.png",
         game.Floor.CLOUD: "cloud.png",
@@ -56,7 +58,7 @@ class TileFileNames:
         game.Floor.GRAVE2: "grave2.png",
         game.Floor.HOUR_GLASS: "hour_glass.png",
         game.Floor.HP_POTION: "green_potion.png",
-        game.Floor.ICE : "ice.png",
+        game.Floor.ICE: "ice.png",
         game.Floor.KEY: "key.png",
         game.Floor.KITTY: "kitty.png",
         game.Floor.LAVA: "lava.png",
@@ -70,11 +72,11 @@ class TileFileNames:
         game.Floor.SHIELD: "shield.png",
         game.Floor.SKELETON: "skeleton.png",
         game.Floor.SKY: "sky.png",
-        game.Floor.SLIME : "slime.png",
-        game.Floor.SNOW : "snow.png",
-        game.Floor.SNOW_BEAST : "snow_beast.png",
-        game.Floor.SNOW_TREE : "snow_tree2.png",
-        game.Floor.STONE : "stone.png",
+        game.Floor.SLIME: "slime.png",
+        game.Floor.SNOW: "snow.png",
+        game.Floor.SNOW_BEAST: "snow_beast.png",
+        game.Floor.SNOW_TREE: "snow_tree2.png",
+        game.Floor.STONE: "stone.png",
         game.Floor.SWITCH: "switch.png",
         game.Floor.SWITCH_LIT: "switch_lit.png",
         game.Floor.SWORD: "sword.png",
@@ -282,13 +284,12 @@ class ScoreView():
             else:
                 logging.WARN("Effect %s has no icon!" % effect)
 
-
         texttop += spacing + FloorView.tile_height
         entry = font.render("High Score Table", 1, Colours.GOLD)
         textpos = entry.get_rect()
         textpos.centerx = frame.centerx
         textpos.top = texttop
-        surface.blit(entry , textpos)
+        surface.blit(entry, textpos)
 
         for i in range(0, len(self.rpg.hst.table)):
             texttop += spacing
@@ -297,7 +298,7 @@ class ScoreView():
             textpos = entry.get_rect()
             textpos.centerx = frame.centerx
             textpos.top = texttop
-            surface.blit(entry , textpos)
+            surface.blit(entry, textpos)
 
         if self.rpg.state == game.TowerRPG.GAME_OVER:
             font = pygame.font.Font(None, 60)
@@ -308,7 +309,7 @@ class ScoreView():
             surface.blit(state, textpos)
 
             if self.rpg.is_high_score():
-                self.draw_text(surface = surface,msg="  ** A New High Score **  ",
+                self.draw_text(surface=surface, msg="  ** A New High Score **  ",
                                fg_colour=Colours.BLACK, bg_colour=Colours.GOLD,
                                size=50,
                                x=self.rpg.current_floor.width * FloorView.tile_width / 2,
@@ -330,11 +331,11 @@ class ScoreView():
             textpos.centery = (self.rpg.current_floor.height * FloorView.tile_height / 2)
             surface.blit(state, textpos)
 
-            self.draw_text(surface = surface,msg="  Press 'N' to change player's name  ",
-               fg_colour=Colours.WHITE, bg_colour=Colours.BLACK,
-               size=40,
-               x=self.rpg.current_floor.width * FloorView.tile_width / 2,
-               y=self.rpg.current_floor.height * FloorView.tile_height - 50)
+            self.draw_text(surface=surface, msg="  Press 'N' to change player's name  ",
+                           fg_colour=Colours.WHITE, bg_colour=Colours.BLACK,
+                           size=40,
+                           x=self.rpg.current_floor.width * FloorView.tile_width / 2,
+                           y=self.rpg.current_floor.height * FloorView.tile_height - 50)
 
         elif self.rpg.state == game.TowerRPG.PAUSED:
             font = pygame.font.Font(None, 60)
@@ -344,7 +345,8 @@ class ScoreView():
             textpos.centery = (self.rpg.current_floor.height * FloorView.tile_height / 2)
             surface.blit(state, textpos)
 
-        if self.rpg.state in (game.TowerRPG.READY, game.TowerRPG.FINISHED, game.TowerRPG.GAME_OVER, game.TowerRPG.PAUSED):
+        if self.rpg.state in (
+        game.TowerRPG.READY, game.TowerRPG.FINISHED, game.TowerRPG.GAME_OVER, game.TowerRPG.PAUSED):
             font = pygame.font.Font(None, 40)
             press_space = font.render("  Press SPACE to continue  ", 1, Colours.WHITE, Colours.BLACK)
             textpos = press_space.get_rect()
