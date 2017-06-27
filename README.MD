@@ -33,7 +33,7 @@ Watch out for your health level!  Game over if it gets to 0.
 <img height=300 width=300 src="https://github.com/kwoolter/TowerApp/blob/master/towerrpg/screenshots/Tower2.PNG" alt="game2">
 </td>
 <td>
-<img height=300 width=200 src="https://github.com/kwoolter/TowerApp/blob/master/towerrpg/screenshots/Tower3.PNG" alt="game3">
+<img height=300 width=300 src="https://github.com/kwoolter/TowerApp/blob/master/towerrpg/screenshots/Tower3.PNG" alt="game3">
 </td>
 </tr>
 </table>
